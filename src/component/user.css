@@ -1,0 +1,105 @@
+.navbar{
+    display: grid;
+    grid-template-columns: 90% 10%;
+     width:100%;
+     height: 100px;
+     background-color: lightgreen;
+     color: white;
+     font-size:larger;
+     font-style: oblique;
+     font-weight:900;
+     animation: nav 1.5s forwards;
+ }
+ @keyframes nav{
+     from{
+         margin-top: -100px;
+     }
+     t0{
+         margin-top: 0px;
+     }
+ }
+ @keyframes use{
+     from{
+         margin-top:-80px;
+     }
+     to{
+         margin-top: 50px;
+     }
+ }
+button{
+    border-radius: 20px;
+    height: 30px;
+    margin-top: 40px;
+    background-color: goldenrod;
+    font-style: oblique;
+    font-weight: 900;
+    color:brown;
+}
+button:hover{
+    background-color: wheat;
+    width: 70%;
+}
+.Data{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    flex-wrap: wrap;
+    margin-left: 100px;  
+    
+}
+.p1{
+    width:350px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: chocolate;
+    margin-left: 60px;
+    margin-top: 40px;
+    border: 4px solid black;
+    animation: use 1.2s forwards ;   
+   
+}
+p{
+    text-align: center;
+    font-style: oblique;
+    font-weight: 900;
+    font-size: 15px;
+    color:white;
+}
+img{
+    margin-left: 120px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.Data :hover{
+   background-color: grey;
+}
+img :hover{
+    color: linen;
+    box-shadow:green;
+}
+@media only screen and (max-width: 600px){
+    h1{
+        font-size: 30px;
+        margin-top: 0px;
+        margin-left: 50px;
+    }
+    button{
+        margin-left: -230px;
+        width: 150px;
+        margin-top:60px;
+    }
+    button:hover{
+        width:100px;
+
+    }
+    .p1{
+        display: block;
+      text-align:left;
+    }
+    img{
+        margin-left: 60px;
+    }
+    .Data{
+        margin-left: 0px;
+    }
+}
